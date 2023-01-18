@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	flex: 1 1 auto;
 }
 [class*="__container"]{
-	max-width: 100%;
+	max-width: 1180px;
 	margin: 0px auto;
 }
 .header{
@@ -63,6 +63,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	display: flex;
 	min-height: 114px;
 	align-items: center;
+}
+.header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
 }
 .header__logo{
 	position: relative;
@@ -103,13 +110,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .sriker-drones__container{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	height: 100vh;
+	background-image: url(../img/main-picture-of-drone.webp);
+	background-size: cover;
+    background-position: center;
 }
+/*
 .striker-drones__image img{
-	max-width: 100%;
-}
+	display: block;
+	height: 100vh;
+}*/
 .block-text__title{
 	font-family: 'Fjalla one', sans-serif;
 	font-size: 140px;
