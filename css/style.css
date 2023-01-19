@@ -39,6 +39,9 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+body{
+	height: 100%;
+}
 .wrapper{
 	overflow: hidden;
 	display: flex;
@@ -46,10 +49,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	min-height: 100%;
 }
 .main{
-	flex: 1 1 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	/*flex: 1 1 auto;*/
 }
 [class*="__container"]{
-	max-width: 100%;
+	max-width: 1180px;
 	margin: 0px auto;
 }
 .header{
@@ -63,6 +69,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	display: flex;
 	min-height: 114px;
 	align-items: center;
+}
+.header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
 }
 .header__logo{
 	position: relative;
@@ -102,20 +115,59 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 122px;
 }
 
-.sriker-drones__container{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.sriker-drones__content{
+	height: 100vh;
+	background-image: url(../img/main-picture-of-drone.webp);
+	background-size: cover;
+    background-position: center;
 }
-.striker-drones__image img{
-	max-width: 100%;
+.block-text__container{
+	flex: 1 1 auto;
+	max-width: 1180px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .block-text__title{
 	font-family: 'Fjalla one', sans-serif;
 	font-size: 140px;
 	font-weight: 400px;
+	color: white;
+	max-width: 450px;
 }
-
+.block-text__text{
+	color: white;
+}
+.button_red{
+	background-color: #f52e62;
+	color: white;
+}
+.button_red:hover{
+	background-color: #0ad19d;
+}
+.button_black{
+	border: white solid 1px;
+}
+.button_black:hover{
+	background-color: white;
+	color: black;
+}
+.button{
+	color: white;
+	width: 155px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Lato, sans-serif;
+	font-size: 13.2px;
+	font-weight: 700;
+}
+.buttons{
+	display: flex;
+	align-items: row;
+}
 h1{
 	font-family: Fjalla One, sans-serif;
 	font-size: 140px;
@@ -123,6 +175,38 @@ h1{
 h2{
 	font-family: Fjalla One, sans-serif;
 	font-size: 40px;
+}
+.about__img{
+	max-width: 600px;
+}
+.about__container{
+	min-height: 760px;
+	max-height: 1vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+.about{
+	background-size: cover;
+    background-position: center;
+	background-image: url(../img/background.webp);
+}
+.about-text__title{
+	margin: 0px 0px 60px 0px;
+}
+.about-text__text{
+	margin: 30px 0px;
+	line-height: 28.8px;
+}
+.about-text__title, .about-text__text{
+	color: white;
+}
+.about-text__subtext{
+	color: #c5c5c5;
+	line-height: 28.8px;
 }
 .item__title{
 	font-family: Fjalla One, sans-serif;
@@ -134,4 +218,32 @@ h2{
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 27.2px;
+}
+.columns__row{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.columns__column{
+	padding: 0px 10px;
+}
+
+
+.FAQ-text{
+	text-align: center;
+}
+.FAQ__subtitle{
+	text-align: center;
+	max-width: 570px;
+}
+@media (max-width: 992px){
+	.columns__row{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (max-width: 768px){
+	.columns__row{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 }
