@@ -39,6 +39,9 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+body{
+	height: 100%;
+}
 .wrapper{
 	overflow: hidden;
 	display: flex;
@@ -46,7 +49,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	min-height: 100%;
 }
 .main{
-	flex: 1 1 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	/*flex: 1 1 auto;*/
 }
 [class*="__container"]{
 	max-width: 1180px;
@@ -109,23 +115,30 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 122px;
 }
 
-.sriker-drones__container{
+.sriker-drones__content{
 	height: 100vh;
 	background-image: url(../img/main-picture-of-drone.webp);
 	background-size: cover;
     background-position: center;
 }
-/*
-.striker-drones__image img{
-	display: block;
+.block-text__container{
+	flex: 1 1 auto;
+	max-width: 1180px;
 	height: 100vh;
-}*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 .block-text__title{
 	font-family: 'Fjalla one', sans-serif;
 	font-size: 140px;
 	font-weight: 400px;
+	color: white;
+	max-width: 450px;
 }
-
+.block-text__text{
+	color: white;
+}
 h1{
 	font-family: Fjalla One, sans-serif;
 	font-size: 140px;
@@ -133,6 +146,36 @@ h1{
 h2{
 	font-family: Fjalla One, sans-serif;
 	font-size: 40px;
+}
+.about__img{
+	max-width: 600px;
+}
+.about__container{
+	min-height: 760px;
+	max-height: 1vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+.about{
+	background-size: cover;
+    background-position: center;
+	background-image: url(../img/background.webp);
+}
+.about-text__title{
+	margin: 0px 0px 60px 0px;
+}
+.about-text__text{
+	margin: 30px 0px;
+}
+.about-text__title, .about-text__text{
+	color: white;
+}
+.about-text__subtext{
+	color: #c5c5c5;
 }
 .item__title{
 	font-family: Fjalla One, sans-serif;
