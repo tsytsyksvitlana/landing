@@ -164,6 +164,10 @@ body{
 	font-size: 13.2px;
 	font-weight: 700;
 }
+.buttons{
+	display: flex;
+	align-items: flex-start;
+}
 h1{
 	font-family: Fjalla One, sans-serif;
 	font-size: 140px;
