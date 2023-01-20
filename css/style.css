@@ -65,7 +65,7 @@ body{
 	left: 0;
 	z-index: 50;
 }
-.header__container{
+.header__container, .footer__container{
 	display: flex;
 	min-height: 114px;
 	align-items: center;
@@ -83,14 +83,6 @@ body{
 }
 .header__menu{
 	flex: 1 1 auto;
-}
-.header__button{
-	position: relative;
-	z-index: 5;
-	flex: 0 0 252px;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
 }
 .menu{
 	display: flex;
@@ -110,6 +102,10 @@ body{
 	font-weight: 700;
 	font-size: 16px;
 	color: white;
+}
+.menu__link:hover{
+	text-decoration: underline;
+	transition: all 0.5s;
 }
 .header__logo img{
     width: 122px;
@@ -215,6 +211,7 @@ h2{
 	font-family: Fjalla One, sans-serif;
 	font-size: 25px;
 	line-height: 40px;
+	color: white;
 }
 .item__text{
 	font-family: Lato, sans-serif;
@@ -227,16 +224,65 @@ h2{
 	grid-template-columns: 1fr 1fr 1fr;
 }
 .columns__column{
-	padding: 0px 10px;
+	padding: 0px 40px;
 }
 
+.needs{
+	background-size: cover;
+    background-position: center;
+	background-color: #f0f0f0;
+}
+.needs-text__text{
+	line-height: 27.2px;
+	margin: 20px 0;
+}
+.needs-text__subtext{
+	font-family: Lato, sans-serif;
+	color: rgb(81, 81, 81);
+	line-height: 27.2px;
+}
+.needs__container{
+	min-height: 760px;
+	max-height: 1vh;
+	display: flex;
+	/*
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;*/
+}
+.needs__content{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.needs__image{
+	width: 50%;
+}
 
 .FAQ-text{
 	text-align: center;
+	color: white;
+	margin: 120px 0;
+}
+.FAQ-text__title{
+	margin: 120px 0;
 }
 .FAQ__subtitle{
 	text-align: center;
-	max-width: 570px;
+}
+.item__text{
+	color: #c5c5c5;
+	line-height: 28.8px;
+	margin: 20px 0 120px 0;
+}
+.FAQ{
+	background-size: cover;
+    background-position: center;
+	background-image: url(../img/background.webp);
 }
 @media (max-width: 992px){
 	.columns__row{
@@ -249,4 +295,9 @@ h2{
 		display: grid;
 		grid-template-columns: 1fr;
 	}
+}
+
+.footer{
+	background-color: rgb(28, 29, 30);
+	min-height: 114px;
 }
