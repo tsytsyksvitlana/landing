@@ -52,11 +52,12 @@ body{
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	/*flex: 1 1 auto;*/
 }
 [class*="__container"]{
 	max-width: 1180px;
-	margin: 0 20px auto;
+	padding-left: 20px;
+	margin: 0 auto;
+	/*margin: 0 20px auto;*/
 }
 .header{
 	position: absolute;
@@ -201,7 +202,7 @@ h2{
 	margin: 0px 0px 60px 0px;
 }
 .about-text__text{
-	margin: 30px 0px;
+	margin: 30px 30px 30px 0;
 	line-height: 28.8px;
 }
 .about-text__title, .about-text__text{
@@ -210,6 +211,7 @@ h2{
 .about-text__subtext{
 	color: #c5c5c5;
 	line-height: 28.8px;
+	margin: 30px 30px 0px 0px;
 }
 .item__title{
 	font-family: Fjalla One, sans-serif;
@@ -300,6 +302,7 @@ h2{
 	font-weight: 700;
 	line-height: 22.4px;
 	color: rgb(197, 197, 197);
+	padding-right: 20px;
 }
 .footer{
 	background-color: rgb(28, 29, 30);
@@ -314,6 +317,23 @@ h2{
 	.block-text__title{
 		font-size: 102px;
 		max-width: 450px;
+	}
+	.about__img{
+		max-width: 100%;
+	}
+	.about__container{
+		min-height: 760px;
+		max-height: none;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.about-text__title{
+		margin: 60px 0px 60px 0px;
+	}
+	.about-text__subtext{
+		margin-bottom: 60px;
 	}
 }
 @media (max-width: 768px){
