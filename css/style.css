@@ -354,7 +354,7 @@ h2{
 	}
 	.needs__image{
 		width: 100%;
-		margin: 0px 0px 0px -20px;
+		padding: 0px 0px 0px -20px;
 	}
 	.needs__image img{
 		width: 100vw;
