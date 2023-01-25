@@ -359,3 +359,9 @@ h2{
 		width: 100vw;
 	}
 }
+@media (max-width: 360px){
+	.buttons{
+		display: flex;
+		align-items: column;
+	}
+}
