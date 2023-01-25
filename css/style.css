@@ -57,6 +57,7 @@ body{
 	max-width: 1180px;
 	padding-left: 20px;
 	margin: 0 auto;
+	/*margin: 0 20px auto;*/
 }
 .header{
 	position: absolute;
@@ -353,19 +354,21 @@ h2{
 	}
 	.needs__image{
 		width: 100%;
-		padding: 0px 0px 0px -20px;
+		margin: 0px 0px 0px -20px;
 	}
 	.needs__image img{
 		width: 100vw;
 	}
 }
-@media (max-width: 360px){
+@media (max-width: 390px){
 	.buttons{
-		display: flex;
-		align-items: column;
+		padding: 20px;
 	}
 	.menu__body{
 		display: none;
 	}
+	.block-text__title{
+		font-size: 92px;
+		max-width: 400px;
+	}
 }
-/*/////*/
