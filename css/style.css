@@ -398,7 +398,7 @@ h2{
 }
 
 .header__burger-btn:hover span {
-    background-color: rgb(103, 103, 103);
+    background-color: #0ad19d;
 }
 
 .header__burger-btn span:nth-child(1) {
@@ -449,11 +449,10 @@ h2{
     }
     .menu {
         position: absolute;
-		right: -100vw;
+		right: -250px;
         top: 0;
-		width: 100vw;
-		height: 100vh;
-        padding: 75px 20px 20px 20px;
+		width: 250px;
+        padding: 70px 20px 20px 20px;
         background-color: #f52e62;
         visibility: hidden;
         transition: transform .5s, visibility .5s;
