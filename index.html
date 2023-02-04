@@ -15,17 +15,18 @@
 <body>
     <div class="wrapper">
         <header id="open" class="header">
-            <div id="close" class="header__container">
+            <div id="close" class="container header__container">
                 <a href="" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
-                <div class="header__menu menu">
-                    <nav class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a href="#about" class="menu__link">About us</a></li>
-                            <li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Contact us</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#about" class="menu__link">About us</a></li>
+                        <li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Contact us</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main class="main">
@@ -149,5 +150,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/burger"></script>
 </body>
 </html>
