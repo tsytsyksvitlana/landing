@@ -474,6 +474,16 @@ h2{
         transform: translateX(-100%);
         display: block;
     }
+	.header__container{
+		background-color: rgb(28, 29, 30);
+		display: flex;
+		min-height: 74px;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.footer, .footer__container{
+		min-height: 74px;
+	}
 }
 html, body {
     overflow-x: hidden;
